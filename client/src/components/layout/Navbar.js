@@ -30,7 +30,10 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const guestLinks = (
     <ul>
       <li>
-        <Link to='/profiles'>Developers</Link>
+        <Link to='/association'>Association</Link>
+      </li>
+      <li>
+        <Link to='/profiles'>Alumni Network</Link>
       </li>
       <li>
         <Link to='/register'>Register</Link>
@@ -45,7 +48,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className='navbar bg-dark'>
       <h1>
         <Link to='/'>
-          <i className='fas fa-graduation-cap'></i> BMIT, Solapur. Alumni Portal
+          <i className='fas fa-graduation-cap'></i> Alumni Portal
         </Link>
       </h1>
       {!loading && (

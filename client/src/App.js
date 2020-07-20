@@ -15,6 +15,7 @@ import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
 import PrivateRoute from './components/routing/PrivateRoute';
+import Association from './components/layout/Association';
 
 //Redux
 import { Provider } from 'react-redux';
@@ -42,6 +43,7 @@ const App = () => {
             <Alert />
             <Switch>
               <Route exact path='/login' component={Login}></Route>
+              <Route exact path='/association' component={Association}></Route>
               <Route exact path='/profiles' component={Profiles}></Route>
               <Route exact path='/profile/:id' component={Profile}></Route>
               <Route exact path='/register' component={Register}></Route>
