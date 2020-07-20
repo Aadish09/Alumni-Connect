@@ -12,8 +12,8 @@ const Landing = ({ isAuthenticated }) => {
     <section className='landing'>
       <div className='dark-overlay'>
         <div className='landing-inner'>
-          <h1 className='x-large'>Alumni Portal, Stay Connected</h1>
-          <p className='lead'>Welcome to Alumni Association Community</p>
+          <h1 className='x-large'>Alumni Connect</h1>
+          <p className='lead'>A hub for Alumni's to connect with peers</p>
           <div className='buttons'>
             <Link to='/register' className='btn btn-primary'>
               Sign Up

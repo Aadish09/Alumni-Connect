@@ -1,10 +1,11 @@
 /* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
 :root {
-  --primary-color: #17a2b8;
-  --dark-color: #343a40;
+  --primary-color: #26C6DA  ;
+  --dark-color:#212121  ;
   --light-color: #f4f4f4;
-  --danger-color: #dc3545;
-  --success-color: #28a745;
+  --danger-color: #F44336  ;
+  --success-color: #00E676;
 }
 
 * {
@@ -14,11 +15,14 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   line-height: 1.6;
-  background-color: #fff;
+  background: url("./img/fixed.jpg");
   color: #333;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 a {
@@ -41,7 +45,7 @@ img {
   overflow: hidden;
   padding: 0 2rem;
   margin-top: 6rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 /* Text Styles*/
@@ -163,6 +167,7 @@ img {
 .alert-primary {
   background: var(--primary-color);
   color: #fff;
+  border-radius: 7px;
 }
 
 .btn-light,
@@ -171,6 +176,7 @@ img {
 .alert-light {
   background: var(--light-color);
   color: #333;
+  border-radius: 7px;
 }
 
 .btn-dark,
@@ -179,6 +185,7 @@ img {
 .alert-dark {
   background: var(--dark-color);
   color: #fff;
+  border-radius: 7px;
 }
 
 .btn-danger,
@@ -187,6 +194,7 @@ img {
 .alert-danger {
   background: var(--danger-color);
   color: #fff;
+  border-radius: 7px;
 }
 
 .btn-success,
@@ -195,6 +203,7 @@ img {
 .alert-success {
   background: var(--success-color);
   color: #fff;
+  border-radius: 7px;
 }
 
 .btn-white,
@@ -204,6 +213,7 @@ img {
   background: #fff;
   color: #333;
   border: #ccc solid 1px;
+  border-radius: 7px;
 }
 
 .btn:hover {
@@ -334,8 +344,10 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
+  /* padding-top: 25px; */
   background: url('./img/showcase.jpg') no-repeat center center/cover;
   height: 100vh;
+  object-fit: cover;
 }
 
 .landing-inner {
@@ -379,6 +391,7 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-image: url("./img/back.png");
 }
 
 .profile-top img {
@@ -575,4 +588,13 @@ button {
   .post button {
     padding: 0.3rem 0.4rem;
   }
+}
+
+.card-back{
+  background-color: white;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 99;
+  /* margin-top: 70px; */
 }

@@ -48,7 +48,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className='navbar bg-dark'>
       <h1>
         <Link to='/'>
-          <i className='fas fa-graduation-cap'></i> Alumni Portal
+          <i className='fas fa-graduation-cap'></i> Alumni Connect
         </Link>
       </h1>
       {!loading && (
